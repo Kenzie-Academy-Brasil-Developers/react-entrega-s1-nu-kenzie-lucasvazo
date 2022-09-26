@@ -1,0 +1,10 @@
+.imgHome {
+    max-width: 100%;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .imgHome {
+        display: block;
+    }
+}

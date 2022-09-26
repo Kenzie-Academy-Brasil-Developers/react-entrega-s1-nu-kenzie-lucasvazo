@@ -1,0 +1,130 @@
+* {
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+
+.insertForm {
+  display: flex;
+  flex-direction: column;
+  width: 22.6875rem;
+
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 2.375rem 1.53125rem;
+
+  gap: 1rem;
+}
+
+h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.generalInputs {
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  padding: 0.8375rem 1rem;
+}
+
+.generalInputs::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #868e96;
+}
+
+small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #868e96;
+}
+
+.insertForm > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* gap: 2.25rem; */
+}
+
+.inputValueDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0px;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  padding: 0.6875rem 1rem;
+  width: 8rem;
+}
+
+.inputValueDiv > input {
+  background: #f8f9fa;
+  outline: none;
+  border: none;
+  width: 3rem;
+}
+
+.inputValueDiv > input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #868e96;
+}
+
+.inputValueDiv > p {
+  color: #343a40;
+}
+
+.selectType > select {
+  position: relative;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  padding: 0.6875rem 1rem;
+  border-radius: 8px;
+  width: 9.375rem;
+}
+
+.selectType > select > option {
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+}
+
+.insertForm fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: none;
+  padding: 0;
+}
+
+.insertForm > button {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  align-self: center;
+}
+
+.insertForm > button:hover {
+  cursor: pointer;
+  background: #e34981;
+  border: 2px solid #e34981;
+  border-radius: 8px;
+}
