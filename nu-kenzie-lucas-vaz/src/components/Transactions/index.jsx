@@ -43,8 +43,10 @@ const Transactions = ({
       <ul className="transactionsUl">
         {transactions.map((t, index) => {
           if (filters === "Todos" || t.typeIncome === filters) {
-            return (
-              <li key={index}>
+
+            return (t.typeIncome === 'Entradas') ?
+            (
+              <li key={index} className="entradaTransaction">
                 <div>
                   <p>{t.description}</p>
                   <span>{`R$ ${t.ammount}`}</span>
@@ -52,9 +54,21 @@ const Transactions = ({
                     <IoMdTrash />
                   </button>
                 </div>
-                <small>{t.typeIncome}</small>
+                <small>Entrada</small>
               </li>
-            );
+            ) :
+            (
+              <li key={index} className="saidaTransaction">
+                <div>
+                  <p>{t.description}</p>
+                  <span>{`R$ ${t.ammount}`}</span>
+                  <button onClick={() => removeItem(index)}>
+                    <IoMdTrash />
+                  </button>
+                </div>
+                <small>Despesa</small>
+              </li>
+            );    
           }
         })}
       </ul>

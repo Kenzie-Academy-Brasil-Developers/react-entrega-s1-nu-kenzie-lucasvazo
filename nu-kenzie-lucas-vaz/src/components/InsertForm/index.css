@@ -131,6 +131,7 @@ small {
 
 .totalValue {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
