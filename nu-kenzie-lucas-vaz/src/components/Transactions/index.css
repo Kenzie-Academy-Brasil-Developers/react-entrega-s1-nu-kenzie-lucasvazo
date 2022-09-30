@@ -77,7 +77,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .transactionsUl > li > div > p {
@@ -87,24 +86,25 @@
   font-size: 16px;
   line-height: 30px;
   color: #212529;
+  width: 65%;
 }
 
 .transactionsUl > li > div > span {
-  margin-left: 10rem;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 30px;
   color: #212529;
+  width: 30%;
 }
 
 .transactionsUl > li > div > button {
+  width: ;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.35rem;
-  margin-right: 0;
   align-self: flex-end;
   border: none;
   background: #e9ecef;

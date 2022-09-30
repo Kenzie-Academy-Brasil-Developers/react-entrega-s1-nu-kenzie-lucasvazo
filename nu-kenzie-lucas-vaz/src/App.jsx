@@ -9,6 +9,7 @@ import Transactions from "./components/Transactions";
 const App = () => {
   const [isLanding, setLanding] = useState(true);
   const [transactions, setTransactions] = useState([]);
+  const [filters, setFilters] = useState('Todos')
 
   
 
@@ -27,7 +28,7 @@ const App = () => {
           transactions={transactions}
           setTransactions={setTransactions}
         />
-        <Transactions transactions={transactions} setTransactions={setTransactions} />
+        <Transactions transactions={transactions} setTransactions={setTransactions} filters={filters} setFilters={setFilters} />
       </main>
     </section>
   );

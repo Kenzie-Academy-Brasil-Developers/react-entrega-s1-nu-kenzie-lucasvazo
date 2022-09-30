@@ -4,7 +4,7 @@ import "./index.css";
 const InsertForm = ({ transactions, setTransactions }) => {
   const [description, setDescription] = useState("");
   const [ammount, setAmmount] = useState(0);
-  const [typeIncome, setTypeIncome] = useState("Entrada");
+  const [typeIncome, setTypeIncome] = useState("Entradas");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,7 +13,7 @@ const InsertForm = ({ transactions, setTransactions }) => {
 
     setDescription("");
     setAmmount(0);
-    setTypeIncome("Entrada");
+    setTypeIncome("Entradas");
 
     event.target.reset();
   };
@@ -55,8 +55,8 @@ const InsertForm = ({ transactions, setTransactions }) => {
               id="valueTypeId"
               onChange={(event) => setTypeIncome(event.target.value)}
             >
-              <option value="Entrada">Entrada</option>
-              <option value="Despesa">Despesa</option>
+              <option value="Entradas">Entrada</option>
+              <option value="Despesas">Despesa</option>
             </select>
           </fieldset>
         </div>
