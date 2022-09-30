@@ -9,9 +9,7 @@ import Transactions from "./components/Transactions";
 const App = () => {
   const [isLanding, setLanding] = useState(true);
   const [transactions, setTransactions] = useState([]);
-  const [filters, setFilters] = useState('Todos')
-
-  
+  const [filters, setFilters] = useState("Todos");
 
   return isLanding ? (
     <div className="App">
@@ -28,7 +26,12 @@ const App = () => {
           transactions={transactions}
           setTransactions={setTransactions}
         />
-        <Transactions transactions={transactions} setTransactions={setTransactions} filters={filters} setFilters={setFilters} />
+        <Transactions
+          transactions={transactions}
+          setTransactions={setTransactions}
+          filters={filters}
+          setFilters={setFilters}
+        />
       </main>
     </section>
   );

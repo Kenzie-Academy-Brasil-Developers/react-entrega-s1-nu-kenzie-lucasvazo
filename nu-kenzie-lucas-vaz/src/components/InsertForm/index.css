@@ -128,3 +128,14 @@ small {
   border: 2px solid #e34981;
   border-radius: 8px;
 }
+
+.totalValue {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #fd377e;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+}
