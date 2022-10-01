@@ -20,7 +20,7 @@ const InsertForm = ({ transactions, setTransactions }) => {
 
   if (transactions.length === 0) {
     return (
-      <div>
+      <div className="containerForm">
         <form onSubmit={handleSubmit} className="insertForm">
           <h4>Descrição</h4>
           <input
@@ -69,7 +69,7 @@ const InsertForm = ({ transactions, setTransactions }) => {
     );
   } else {
     return (
-      <div>
+      <div className="containerForm">
         <form onSubmit={handleSubmit} className="insertForm">
           <h4>Descrição</h4>
           <input

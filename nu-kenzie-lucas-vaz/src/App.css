@@ -14,11 +14,17 @@
     height: 100%;
 }
 
+.dashboarad {
+    width: 100%;
+}
+
 .mainContainer {
     padding: 2.4375rem 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 
